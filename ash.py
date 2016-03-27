@@ -22,13 +22,15 @@ samples = ['Red-Shirt',
 
 def generateMetaData():
 
+    cf = ColorFinder('colorchecker')
+
 
     samples_path = os.path.join(os.path.dirname(__file__), 'samples')
 
-    a = {}
 
     for sample in samples:
         fp = open(os.path.join(samples_path, sample))
-        ColorFinder().find(fp, color_space='Adobe', html_output=os.path.join(samples_path, "colors_%s.html" % sample))
+        a[sample] = cf.find(fp)
         fp.close()
-        a[sample] =
+
+    return a    
