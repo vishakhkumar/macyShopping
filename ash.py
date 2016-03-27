@@ -1,7 +1,9 @@
 from colorfinder import ColorFinder
 import os
 
-samples = ['Red-Shirt',
+samples = [
+
+	   'Red-Shirt',
            'Green-tshirt',
            'Blue-Tshirt',
 
@@ -16,6 +18,7 @@ samples = ['Red-Shirt',
            'Red-Jeans',
            'Green-Jeans',
            'Blue-Jeans'
+
            ]
 
 
